@@ -1,0 +1,28 @@
+<% include ../partials/header %>
+
+<div class="container">
+
+    <h1 class="text-center bold">Edit "<%= book.title %>" </h1>
+    <div class="row">
+      <div style="max-width:450px; margin:0 auto;">
+            <form class="" action="/books/<%= book._id %>?_method=PUT" method="POST">
+              <div class="form-group">
+                <input required pattern=".*\S+.*" class="form-control" type="text" name="book[title]" value=" <%= book.title %> ">
+              </div>
+              <div class="form-group">
+                <input required class="form-control" type="text" name="book[image]" value=" <%= book.image %> ">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="book[description]" rows="8" cols="80" placeholder="Description"><%= book.description %></textarea>
+
+              </div>
+              <div class="form-group">
+                <input class="btn btn-block btn-lg btn-warning" type="submit" value="Submit">
+              </div>
+            </form>
+            <a class="bold" href="/books">Go Back</a>
+      </div>
+  </div>
+</div>
+
+<% include ../partials/footer %>

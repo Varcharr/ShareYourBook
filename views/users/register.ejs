@@ -1,0 +1,23 @@
+<% include ../partials/header %>
+
+<div class="container">
+  <h1 class="text-center bold">Sign Up</h1>
+  <div class="row">
+    <div style="max-width:450px; margin:0 auto;">
+          <form class="" action="/register" method="POST">
+            <div class="form-group">
+              <input required pattern="\S+" title="Please fill out this field. No whitespaces allowed!" class="form-control" type="text" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <input required pattern="\S+" title="Please fill out this field. No whitespaces allowed!" class="form-control" type="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <input class="btn btn-block btn-lg btn-warning" type="submit" value="Sign Up">
+            </div>
+          </form>
+          <a class="bold" href="/books">Go Back</a>
+    </div>
+</div>
+</div>
+
+<% include ../partials/footer %>

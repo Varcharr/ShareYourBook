@@ -1,0 +1,115 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  padding-top: 70px;
+  /*background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);*/
+  background-color: #d3d3d3;
+}
+.thumbnail .fit{
+  width: 100%;
+  height: auto;
+}
+.fit{
+  max-width: 450px;
+  margin: 10px auto 0 auto;
+}
+.navbar{
+  background-color:  #000;
+  border: 1px solid black;
+  border-radius: 0px;
+  width: 100vw;
+}
+.jumbotron{
+  background-color: white;
+  /*#ffdda0;*/
+}
+.mainImage{
+  width: 100vw;
+  height: auto;
+}
+.caption-full{
+  padding:5px 10px;
+}
+textarea {
+    resize: none;
+}
+#deleteForm{
+  display: inline;
+}
+.navbar-right, #toggleBtn{
+  margin-right: 20px;
+}
+.bold{
+  font-weight: 900;
+}
+.alert-danger{
+  border: 0px;
+  background-color: rgba(225,0,0,0.5 );
+  color: white;
+  max-width: 700px;
+  margin: 0 auto 10px auto;
+  border-radius: 0;
+  box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.alert-warning{
+  border: 0px;
+  background-color: rgba(236, 151, 31,0.7 );
+  color: white;
+  max-width: 700px;
+  margin: 0 auto 10px auto;
+  border-radius: 0;
+  box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#landing{
+  height: 100vh;
+  width: 100vw;
+}
+body.landing{
+  background-image: url("../images/2.jpeg");
+  background-color: black;
+  background-attachment: fixed;
+  background-size:  cover;
+  background-repeat: no-repeat;
+  width: 100vh;
+  height: 100vw;
+  width: auto;
+  height: auto;
+
+}
+#center{
+  color:white;
+  position: absolute;
+   left: 50%;
+   top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+#center h1{
+  font-size: 8vw;
+  background-color: rgba(0,0,200.0.5);
+  text-shadow: 1px 1px 1px #000,
+                 2px 2px 3px gray;
+}
+.thumbnail{
+  background-color: black;
+  padding: 5px;
+  color: white;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn{
+  color: black;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.well{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.nav.navbar-nav.navbar-right li a:hover{
+  color: white;
+}
+.container .jumbotron {
+    border-radius: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

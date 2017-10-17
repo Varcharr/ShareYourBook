@@ -1,0 +1,37 @@
+<% include ../partials/header %>
+
+
+
+<div class="container">
+
+  <header class="jumbotron">
+    <div class="container text-center">
+        <h2 class="bold">Feel free to add your favorite books</h2>
+        <p>You can also leave a book review</p>
+        <p>
+          <a class="btn btn-lg btn-warning" href="/books/new">Add new book</a>
+        </p>
+  </div>
+  </header>
+
+
+
+  <div class="row" style="display:flex; flex-wrap:wrap;">
+
+        <% books.forEach(function(book){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                  <img class="mainImage" src="<%= book.image %>" alt="<%= book.title %> image">
+                  <h4 class="text-center"> <%= book.title.substring(0,25) %> </h4>
+                  <p>
+                    <a href="/books/<%= book._id %>" class="btn btn-warning btn-block bold">More Info</a>
+                  </p>
+                </div>
+            </div>
+        <% }) %>
+
+    </div>
+  </div>
+
+
+<% include ../partials/footer %>
